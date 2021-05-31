@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/* staff index.css */
+.sub_mainVisual{
+	background: url(../images/index/h2_main_visual.jpg) no-repeat;
+	background-size: cover;
+}
+.staff Section{
+	max-width: 990px;
+	margin: 0 auto 60px;
+}
+.staffSection p.centerAdjust{
+	margin-bottom: 80px;
+}
+.staffIndexColumnSet3{
+	max-width:855px;
+	margin:0 auto;
+}
+.staffIndexColumnSet3 .column1{
+	width:265px;
+	float:left;
+	margin-left:30px;
+	margin-bottom:34px;
+}
+.staffIndexColumnSet3 .column1:nth-child(3n+1){
+	margin-left:0;
+}
+.staffIndexColumnSet3 .column1 a{
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+}
+.staffIndexColumnSet3 .column1 a:hover{
+	opacity: 0.75;
+	-moz-opacity: 0.75;
+	filter: alpha(opacity=75);
+}
+.staffIndexColumnSet3 .column1 a img{
+	display: block;
+}
+.staffIndexColumnSet3 .column1 p{
+	background:#4D4D4D;
+	padding:8px 10px;
+	font-size:14px;
+	line-height: 1.8em;
+}
+.staffIndexColumnSet3 .column1 p strong{
+	font-size:21px;
+	display:block;
+	font-weight:normal;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;	
+}
+
+/* 社員紹介　詳細*/
+.staff .staffHeadColumnSet {
+	margin-bottom: 60px;
+	position:relative;
+}
+.staff .staffHeadColumnSet .columnLeft {
+	float: left;
+	max-width: 750px;
+}
+.staff .staffHeadColumnSet .columnLeft img {
+	width: 100%;
+}
+.staff .staffHeadColumnSet .columnRight {
+	float: right;
+	max-width: 215px;
+	position: relative;
+}
+.staffHeadColumnSet .columnRight .inner{
+	position:absolute;
+	bottom:0;
+	right:0;
+	width: 215px;
+}
+.staff .staffHeadColumnSet .columnRight p {
+	font-size: 16px;
+	color: #666;
+}
+.staff .staffHeadColumnSet .columnRight h2 {
+	color: #666;
+	font-size:28px;
+	display:block;
+	font-weight:normal;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	line-height: 2.5em;	
+}
+.staff .staffHeadColumnSet .columnRight .entryYear {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	display:block;
+	background-color: #77BAE3;
+	width: 176px;
+	text-align: center;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	padding: 5px 0;
+}
+.staff .staffBodyColumnSet {
+	margin-bottom: 60px;
+}
+.staff .staffBodyColumnSet .columnLeft {
+	float: left;
+	max-width: 390px;
+	margin-right: 100px;
+}
+.staff .staffBodyColumnSet .columnLeft img {
+	width: 100%;
+	margin-bottom: 50px;
+}
+.staff .staffBodyColumnSet .columnRight {
+	float: left;
+	max-width: 500px;
+	position: relative;
+}
+.staff .staffBodyColumnSet .columnRight .inner {
+	float: left;
+	max-width: 500px;
+	position: relative;
+	border-top: 1px solid #3671B8;
+	padding: 20px 0;
+}
+.staff .staffBodyColumnSet .columnRight .inner:last-child {
+	border-bottom: 1px solid #3671B8;
+}
+.staff .staffBodyColumnSet .columnRight p {
+	font-size: 16px;
+	color: #666;
+	line-height: 1.7em;
+}
+.staff .staffBodyColumnSet .columnRight h3 {
+	color: #666;
+	font-size: 24px;
+	display: block;
+	font-weight: bold;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	line-height: 1.5em;
+	margin-bottom: 10px;
+}
+/* Responsive Setting
+=========================================================================================== */
+@media screen and (max-width: 1059px) {
+	/* 社員紹介　詳細*/
+.staff .staffBodyColumnSet .columnLeft{
+	max-width: 46%;
+	margin-right:4%;
+}
+.staff .staffBodyColumnSet .columnRight{
+	max-width: 50%;
+}
+}
+@media screen and (max-width: 1020px) {
+/* 社員紹介　詳細*/
+.staff .staffHeadColumnSet .columnLeft{
+	max-width:100%;
+}
+.staffHeadColumnSet .columnLeft p.img{
+	margin-right: 220px;
+}
+
+}
+@media screen and (max-width: 910px) {
+.staffSection .clearFix{
+	padding:0 2%;
+}
+.staffIndexColumnSet3 .column1{
+	width:32%;
+	margin-left:2%;
+	max-width: 100%;
+}
+.staffIndexColumnSet3 .column1:first-child{
+}
+}
+@media screen and (max-width: 767px) {
+/* index　*/
+.staffSection p.centerAdjust{
+	text-align:left;
+	margin-bottom:30px;
+}
+
+.staffIndexColumnSet3{
+	max-width:100%;
+}
+.staffIndexColumnSet3 .column1{
+	width:49%;
+	margin-left:2%;
+	max-width: 100%;
+}
+.staffIndexColumnSet3 .column1:nth-child(3n+1){
+	margin-left:2%;
+}
+.staffIndexColumnSet3 .column1:nth-child(odd){
+	margin-left:0;
+}
+.staffIndexColumnSet3:after{
+	clear:none;
+}
+
+/* 社員紹介　詳細*/
+.staffHeadColumnSet .columnLeft p.img{
+	margin-right: 0;
+}
+.staff .staffHeadColumnSet .columnLeft{
+	float:none;
+	margin-bottom:15px;
+}
+.staff .staffHeadColumnSet .columnRight{
+	float:none;
+	max-width: 100%;
+}
+.staffHeadColumnSet .columnRight .inner{
+	position:static;
+}
+.staff .staffHeadColumnSet .columnRight h2{
+	line-height:1.4em;
+}
+.staff .staffBodyColumnSet .columnLeft{
+	float:none;
+	max-width: 100%;
+	margin-right:0;
+}
+.staff .staffBodyColumnSet .columnRight{
+	float:none;
+	max-width: 100%;
+}
+.staff .staffBodyColumnSet .columnRight .inner{
+	max-width: 100%;
+}
+}
+@media screen and (max-width: 579px) {
+}
+@media screen and (max-width: 399px) {
+
+}

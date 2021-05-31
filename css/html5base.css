@@ -1,0 +1,215 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+	font-weight:normal;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#00dec1;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#00dec1;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+ul,li{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+
+/* =============================================================================
+   UtilityClass
+   ========================================================================== */
+
+.fontBlack{color:#000;}
+.fontWhite{color:#FFF;}
+.fontGray{color:#505050;}
+.fontRed{color:#da000e;}
+.fontPink{color:#FF7864;}
+.fontGreen{color:#50b43c;}
+
+.font10{font-size:10px;}
+.font11{font-size:11px;}
+.font12{font-size:12px;}
+.font13{font-size:13px;}
+.font14{font-size:14px;}
+.font15{font-size:15px;}
+.font16{font-size:16px;}
+.font17{font-size:17px;}
+.font18{font-size:18px;}
+.font19{font-size:19px;}
+.font20{font-size:20px;}
+.font21{font-size:21px;}
+.font22{font-size:22px;}
+.font23{font-size:23px;}
+.font24{font-size:24px;}
+.font25{font-size:25px;}
+
+.fontBold{font-weight:bold;}
+.fontNormal{font-weight:normal;}
+
+.LH0{line-height:0;}
+.LH18{line-height:18px;}
+.LH60{line-height:60px;}
+.LH100{line-height:1;}
+.LH110{line-height:1.1;}
+.LH120{line-height:1.2;}
+.LH130{line-height:1.3;}
+.LH140{line-height:1.4;}
+.LH150{line-height:1.5;}
+.LH160{line-height:1.6;}
+.LH170{line-height:1.7;}
+.LH180{line-height:1.8;}
+.LH190{line-height:1.9;}
+.LH200{line-height:2;}
+
+.maT5{margin-top:5px;}
+.maT10{margin-top:10px;}
+.maT15{margin-top:15px;}
+.maT20{margin-top:20px;}
+.maT25{margin-top:25px;}
+.maT30{margin-top:30px;}
+.maT35{margin-top:35px;}
+.maT40{margin-top:40px;}
+.maT45{margin-top:45px;}
+.maT50{margin-top:50px;}
+
+.maB5{margin-bottom:5px;}
+.maB10{margin-bottom:10px;}
+.maB15{margin-bottom:15px;}
+.maB20{margin-bottom:20px;}
+.maB25{margin-bottom:25px;}
+.maB30{margin-bottom:30px;}
+.maB35{margin-bottom:35px;}
+.maB40{margin-bottom:40px;}
+.maB45{margin-bottom:45px;}
+.maB50{margin-bottom:50px;}
+
+.maR08{margin-right:8px;}
+.maR15{margin-right:15px;}
+.maR40{margin-right:40px;}
+
+.maL08{margin-left:8px;}
+.maL10{margin-left:10px;}
+.maL15{margin-left:15px;}
+.maL20{margin-left:20px;}
+.maL30{margin-left:30px;}
+.maL40{margin-left:40px;}
+.maL165{margin-left:165px;}
+
+.ma40{margin:40px;}
+
+.paL02{padding-left:2px;}
+
+.cB{clear:both;}
+.cL{clear:left;}
+.cR{clear:right;}
+
+.fL{float:left;}
+.fR{float:right;}
+
+.tAL{text-align:left;}
+.tAR{text-align:right;}
+.tAC{text-align:center;}
+
+.VAB{vertical-align:bottom;}
+.VAM{vertical-align:middle;}
+
+.clearfix:after {  
+  content: ".";   
+  display: block;   
+  height: 0;   
+  clear: both;   
+  visibility: hidden;  
+}    
+.clearfix { display: inline-table; }    
+/* Hides from IE-mac \*/  
+* html .clearfix { height: 1%; }  
+.clearfix { display: block; }  
+/* End hide from IE-mac */  
+
+*{zoom:1;}

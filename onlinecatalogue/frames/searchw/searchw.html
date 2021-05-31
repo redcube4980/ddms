@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title></title>
+<script language="JavaScript" src="./fulltext.js"></script>
+<script language="JavaScript" src="./searchw.js"></script>
+<script language="JavaScript" src="../js/frameutil.js"></script>
+<script language="JavaScript" src="../../js/navigator.js"></script>
+<script language="JavaScript" src="../../js/util.js"></script>
+<script language="JavaScript" src="../../js/search.js"></script>
+<style type="text/css">
+<!--
+body{margin:0px; padding:0px;}
+.style2 {font-size: 10px}
+.style3 {font-size: 12px}
+.tbl_reso { width: 80%; border-width: 0; }
+.str_reso1 { color: blue;  font-size: 16px; }
+.str_reso2 { color: black; font-size: 12px; }
+.str_reso3 { color: blue; font-size: 14px; }
+.str_reso4 { color: red; }
+.str_msg   { color: black; font-size: 12px; }
+.warn   {color: red;}
+.text	{font-size:12px; }
+#result_nav {padding: 10px 0px;font-size: 12px;}
+.navi_act_arrow {
+  cursor: pointer;
+  border: 1px solid gray;
+  background-color: #dddddd;
+  color: blue;
+  padding: 0px 3px;
+  margin: 0px 4px;
+}
+.navi_inact_arrow {
+  cursor: default;
+  border: 1px solid gray;
+  background-color: #dddddd;
+  color: gray;
+  padding: 0px 3px;
+  margin: 0px 4px;
+}
+.navi_number {
+  cursor: pointer;
+  color:blue;
+  text-decoration: underline;
+  margin: 0px;
+}
+.navi_number_current {
+  cursor: pointer;
+  margin: 0px;
+}
+form {
+	margin-bottom:0px;
+}
+
+-->
+</style>
+</head>
+<body bgcolor="FFFFFF" topmargin="0" leftmargin="0" style="overflow-y:auto;overflow-x:hidden;">
+    <center>
+      <form action="#" method="get" name="searchwform1">
+	<input type="text" size="1" style="display:none;">
+
+      <div align="left"><img src="images/kensaku.jpg" width="233" height="21" border="0"></div>
+
+      <table border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+	  <td>
+	    <table border="0" cellpadding="0" cellspacing="0">
+	      <tr valign="middle">
+		<td align="center" colspan="2"><img src="images/space.gif" width="100%" height="10"></td>
+	      </tr>
+	      <tr valign="middle">
+		<td align="center"><img src="images/word.gif"></td>
+		<td>
+
+		  <input type="text" name="q" size="20" >&nbsp;&nbsp;
+		</td>
+	      </tr>
+	      <tr>
+		<td colspan="2"><img src="images/space.gif" height="5"></td>
+	      </tr>
+	      <tr>
+		<td>
+		  <img src="images/space.gif">
+		</td>
+		<td align="left" class="text">
+		  <input type="radio" name="type" value="and" checked="checked">AND検索<br><input type="radio" name="type" value="or">OR検索</td>
+	      </tr>
+	      <tr>
+		<td colspan="2"><img src="images/space.gif" height="5"></td>
+	      </tr>
+	      <tr>
+		<td>
+		  <img src="images/space.gif">
+		</td>
+		<td align="left">
+		  <input type="submit" value="検索" onClick="onSearch();return false;">&nbsp;&nbsp;
+		  <input type="button" value="クリア" onClick="onClear();return false;"></td>
+	      </tr>
+	    </table>
+	  </td>
+	</tr>
+      </table>
+
+      <br>
+      <div id="str_msg"></div>
+      <div id="result_table"></div>
+      <div id="result_nav"></div>
+
+    </form>
+    </center>
+  </body>
+</html>

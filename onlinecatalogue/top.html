@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=Shift_JIS" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="ebook/js/config.js"></script>
+    <script type="text/javascript" src="ebook/js/lang.js"></script>
+    <script type="text/javascript" src="ebook/js/ebutil.js"></script>
+<script>
+function isMetro()
+{
+    try {
+        supported = !!new ActiveXObject("htmlfile");
+    } catch (e) {
+        supported = false;
+    }
+    return supported ? false : true;
+}
+if (navigator.platform.indexOf("iPad")   != -1 ||
+    navigator.platform.indexOf("iPhone") != -1) {
+    location.href = "./ebook/mobilesafari/body_ms.html"+location.search;
+} else if (navigator.userAgent.indexOf("Android") != -1) {
+    location.href = "./ebook/android/body_ms.html"+location.search;
+} else if (navigator.userAgent.indexOf("Silk") != -1) {
+    // Kindle Fire desktop mode
+    location.href = "./ebook/android/body_ms.html"+location.search;
+} else if (navigator.userAgent.indexOf("MSIE") != -1 ||
+           navigator.userAgent.indexOf("Trident") != -1) {
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.match(/(msie|rv:)\s*([0-9.]+)/)) {
+        var version = RegExp.$2;
+        var winver = 0.0;
+        if (ua.match(/windows\s+nt\s+([0-9.]+)\;/))
+          winver = parseFloat(RegExp.$1);
+        if (version >= 10.0 &&
+            winver >= 6.2 &&   // win8-
+            isMetro()) {
+            location.href = "./ebook/metro/body_ms.html"+location.search;
+        }
+    }
+}
+</script>
+ </head>
+  <body onload="onLoad()">
+    <div id="header">
+      <iframe src="./header.html" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div id="viewcontainer">
+      <!-- iframeに直接 style="height:50%;" のように高さを指定する形式だと、
+           FireFoxやChromeでiframeの間にスペースが入ってしまい、最下のiframeが
+           Windowをはみ出てしまうので、高さはdivで指定する。 -->
+<!-- Frame を使う場合は、leftviewを有効化。幅はconfig.jsのLeftViewWidthで指定。-->
+      <div id="leftview"> 
+
+<!-- 商品検索
+	<div style="height:50%"><iframe src="./frames/searchp/contents.html" frameborder="0"></iframe></div>
+	<div style="height:50%"><iframe src="./frames/searchp/searchp.html" frameborder="0"></iframe></div>
+商品検索end-->
+<!-- ツリー式INDEX-->
+	<div style="height:100%"><iframe src="./frames/searchw/contents.html" frameborder="0"></iframe></div>
+<!--ツリー式INDEXend-->
+<!-- 全文検索(複数カタログ)
+	<div style="height:50%"><iframe src="./frames/searchw2/contents.html" frameborder="0"></iframe></div>
+	<div style="height:50%"><iframe src="./frames/searchw2/searchw.html" frameborder="0"></iframe></div>
+全文検索(複数カタログ)end-->
+<!-- 全文検索
+	<div style="height:50%"><iframe src="./frames/searchw/contents.html" frameborder="0"></iframe></div>
+	<div style="height:50%"><iframe src="./frames/searchw/searchw.html" frameborder="0"></iframe></div>
+全文検索end-->
+<!-- End of leftview-->
+      </div>
+
+      <div id="centerview">
+	<iframe id="if_screen" src="ebook/screen.html" frameborder="0"></iframe>
+      </div><!-- end of centerview --> 
+    </div><!-- end of viewcontainer -->
+
+<!-------- //ver05.11.2.140425// -------->
+  </body>
+</html>

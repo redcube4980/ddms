@@ -1,0 +1,25 @@
+/* =============================================================================
+   CONTACT
+   ========================================================================== */
+
+#onlineContents{
+	width:960px;
+	background:url(../images/content_zab.jpg) repeat-y;
+	text-align:left;
+}
+#onlineContents .bottom{
+	width:960px;
+	height:20px;
+	background:url(../images/content_bt.jpg) no-repeat bottom;
+}
+
+
+#contact_linkbox{
+	text-align: center;
+	margin: 35px 0;
+}
+
+#contact_linkbox li{
+	margin: 0 0 20px;;
+}
+

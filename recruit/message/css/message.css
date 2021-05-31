@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* .message */
+.message section {
+	margin-bottom: 60px;
+}
+.message .messageBox {
+	padding: 30px 30px 30px;
+}
+.message .messageBox .boxRight {
+	float: right;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #666;
+	max-width: 195px;
+	width: 20%;
+}
+.message .messageBox .boxLeft {
+	float: left;
+	text-align: left;
+	color: #666;
+	font-size: 16px;
+}
+.message .messageBox .boxLeft .font25 {
+	font-size: 25px;
+	font-weight: bold;
+}
+.message .messageBox .boxLeft .textBlue {
+	font-weight: bold;
+	line-height: 2.5em;
+	font-size: 25px;
+}
+.message .messageBox p.text {
+	font-size: 16px;
+	margin-bottom:1.5em;
+}
+
+/* Responsive Setting
+=========================================================================================== */
+@media screen and (max-width: 1059px) {
+
+}
+@media screen and (max-width: 910px) {
+}
+@media screen and (max-width: 767px) {
+.message .messageBox .boxRight {
+	float: none;
+	font-size: 14px;
+	max-width: 195px;
+	width: 100%;
+	margin: 0 auto 30px;
+}
+.message .messageBox .boxLeft {
+	width: 100%;
+	float: none;
+	font-size: 16px;
+	margin: 0 auto;
+}
+}
+@media screen and (max-width: 579px) {
+}
+@media screen and (max-width: 399px) {
+}

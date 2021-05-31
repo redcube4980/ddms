@@ -1,0 +1,24 @@
+/* =============================================================================
+   PRIVACY POLICY
+   ========================================================================== */
+
+#privacyContents{
+	width:960px;
+	background:url(../images/content_zab.jpg) repeat-y;
+	text-align:left;
+}
+#privacyContents .bottom{
+	width:960px;
+	height:20px;
+	background:url(../images/content_bt.jpg) no-repeat bottom;
+}
+
+#privacyBox{
+	width:900px;
+	margin:37px auto 0 auto;
+	overflow:hidden;
+}
+
+#privacyBox a{
+	color:#F00;
+}

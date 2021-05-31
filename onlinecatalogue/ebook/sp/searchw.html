@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.6">
+    <link rel="stylesheet" href="css/searchw.css">
+    <script type="text/javascript" src="searchw.js" ></script>
+    <script language="JavaScript" src="../js/documentinfo.js"></script>
+    <script language="JavaScript" src="../js/config.js"></script>
+    <script language="JavaScript" src="../js/lang.js"></script>
+    <script language="JavaScript" src="../js/ebutil.js"></script>
+    <script language="JavaScript" src="../../frames/searchw/fulltext.js"></script>
+    <script language="JavaScript" src="../../js/util.js"></script>
+    <script language="JavaScript" src="../../js/navigator.js"></script>
+    <script language="JavaScript" src="../../js/search.js"></script>
+</head>
+<body onload="load();">
+    <div id="browser">
+        <div id="header"></div>
+        <div id="contents">
+	  <div id="search_form">
+	      <input id="form_q" type="text" name="q" value="" />
+	      <div id="search_button_container">
+		<a id="btn_search" class="link_button" href="javascript:void(0);" onclick="onSearch();"></a>
+		<a id="btn_return" class="link_button" href="javascript:void(0);" onclick="EBUtil.closeTemporaryWindow();"></a>
+	      </div>
+	    <div id="str_msg"></div>
+  	  </div>
+
+	  <div id="search_result">
+            <ul id="resultsList">
+              <li id="item_back" class="resultsListRow back" onclick="EBUtil.closeTemporaryWindow();"></li>
+<!--
+              <li class="resultsListRow">item</li>
+-->
+            </ul>
+	    <div id="result_nav"></div>
+	  </div>
+  	</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+html{
+  overflow:hidden;
+}
+
+body {
+  padding:0px;
+  margin:0px;
+  font-family: "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro W3";
+  color: #000000;
+}
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-interpolation-mode: bicubic;	/* for IE7 */
+}
+
+/* Currently unused. For future. */
+#header {
+  background-color: gray;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height:40px;
+  z-index:200;
+  overflow:hidden;
+  background-color:gray;
+  padding:0px;
+}
+
+#mainarea {
+  background-color: #eeeeee;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width:100%;
+  overflow:hidden;
+  background-image: url("../skinimage/bg.gif");
+  background-position: 0px 0px;
+}
+#normallayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#bookborderlayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+}
+#booklayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#linklayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#centerborderlayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#bookmarklayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#bookmarklayer .bookmarktab {
+  position: absolute;
+  background-color: blue;
+  opacity: 0.3;
+  filter:alpha(Opacity=30);
+  cursor:pointer;
+}
+#bookmarklayer .bookmarktab p {
+  color: white;
+  font-size: 12px;
+  margin: 0px 10px;
+}
+
+#zoomlayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+}
+#zoomedscrolllayer img {
+  position: absolute;
+}
+.bookborder .top {
+  position: absolute;
+  background-image: url("../skinimage/book/layout_top.gif");
+  overflow:hidden;
+}
+.bookborder .lefttop {
+  position: absolute;
+  background-image: url("../skinimage/book/layout_lefttop.gif");
+  overflow:hidden;
+}
+.bookborder .left {
+  position: absolute;
+  background-image: url("../skinimage/book/layout_left.gif");
+  overflow:hidden;
+}
+.bookborder .leftbottom {
+  position: absolute;
+  background-image: url("../skinimage/book/layout_leftbottom.gif");
+  overflow:hidden;
+}
+.bookborder .righttop {
+  position: absolute;
+  background-image: url("../skinimage/book/layout_righttop.gif");
+  overflow:hidden;
+}
+.bookborder .right {
+  position: absolute;
+  background-image: url("../skinimage/book/layout_right.gif");
+  overflow:hidden;
+}
+.bookborder .rightbottom {
+  position: absolute;
+  background-image: url("../skinimage/book/layout_rightbottom.gif");
+  overflow:hidden;
+}
+.bookborder .bottom {
+  position: absolute;
+  background-image: url("../skinimage/book/layout_bottom.gif");
+  overflow:hidden;
+}
+
+#copy_and_paste_layer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#windowlayer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#sidebar {
+  position: absolute;
+  top: 0px;
+  display:none;
+  height:100%;
+}
+#sidebar .sidebarbg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  background-color: white;
+  opacity: 0.8;
+  filter:alpha(Opacity=80);
+}
+#sidebar .contentarea {
+  position: absolute;
+  left: 0px;
+  width:100%;
+  overflow-y: auto;
+  font-size:12px;
+}
+#sidebar .footerarea {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  text-align:right;
+}
+#sidebar .toc_icon_div {
+  float:left;
+  height:18px;
+}
+#sidebar .toc_text_div {
+  margin-left:34px;
+}
+#sidebar .toc_text_div span {
+  cursor:pointer;
+  line-height:16px;
+}
+
+#controlbar {
+  position: absolute;
+  top:-100px;		/* É`ÉâÇ¬Ç´ñhé~ÇÃÇΩÇﬂÅAç≈èâÇÕâÊñ äOÇ…èoÇµÇƒÇ®Ç≠ */
+  width: 100%;
+  height:51px;		/* ëÄçÏÉoÅ[ÇÃçÇÇ≥ÇÕÇ±Ç±Ç≈éwíË */
+  background-color: #cccccc;
+  overflow:hidden;
+  background-image: url("../skinimage/bar/bg-2.jpg");
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+}
+#controlbar img {
+  vertical-align:bottom;
+}
+#controlbar .page {
+  font-family: "ÇlÇr ÇoÉSÉVÉbÉN", Osaka, "ÉqÉâÉMÉmäpÉS Pro W3";
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+#controlbar .cell {
+  float: left;
+}
+
+
+/*ÉyÅ[ÉWà⁄ìÆÇÃÉ{É^Éìí≤êÆ*/
+#controlbar .pagebtn{ vertical-align:top; position:relative; top:2px;}
+.PageRoll{ position:relative; bottom:2px;}
+*html .PageRoll{ position:relative; bottom:1px;} /* IE6óp */
+*:first-child + html .PageRoll{ position:relative; bottom:1px;} /* IE7óp */
+
+
+.JSWindowTitle {
+}
+.JSWindowTitleText {
+  font-size:12px;
+  padding-left:5px;
+  cursor:default;
+}
+.JSWindowTitleBGLeft {
+  background-image: url("../skinimage/window/wintitle_left.gif");
+  background-position: 0px 0px;
+}
+.JSWindowTitleBGCenter {
+  background-image: url("../skinimage/window/wintitle.gif");
+  background-position: 0px 0px;
+}
+.JSWindowTitleBGRight {
+  background-image: url("../skinimage/window/wintitle_right.gif");
+  background-position: 0px 0px;
+}
+.JSWindowTitleCloseBtn {
+  background-image: url("../skinimage/window/win_close.gif");
+  width:12px;
+  height:12px;
+  background-position: 2px 2px;
+  background-repeat: no-repeat;
+  cursor:pointer;
+}
+.JSWindowTitleCloseBtn.RO {
+  background-image: url("../skinimage/window/win_close_ro.gif");
+}
+
+.JSWindowBody {
+  background-color:gray;
+}
+.JSWindowClientArea {
+  background-color:#eeeeee;
+  overflow:hidden;
+}

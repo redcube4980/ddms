@@ -1,0 +1,249 @@
+/* =============================================================================
+   BASE
+   ========================================================================== */
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	color:#333333;
+	font-size:12px;
+	font-family:"繝偵Λ繧ｮ繝手ｧ偵ざ Pro W3", "Hiragino Kaku Gothic Pro", "繝｡繧､繝ｪ繧ｪ", Meiryo, Osaka, "�ｭ�ｳ �ｰ繧ｴ繧ｷ繝�け", "MS PGothic", sans-serif;
+	line-height:1.6;
+	background:#FFFFFF;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+/* =============================================================================
+   LINKS
+   ========================================================================== */
+
+a { color: #333333; }
+a:visited { color: #333333; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+a img {border: none;}
+
+a:link {
+	color:#333333;
+	text-decoration:none;
+}
+a:active {
+	color:#333333;
+	text-decoration:none;
+}
+a:visited {
+	color:#333333;
+	text-decoration:none;
+}
+a:hover {
+	color:#333333;
+	text-decoration:underline;
+}
+
+/* =============================================================================
+   COMMON
+   ========================================================================== */
+
+#container{
+	width:100%;
+	min-width:962px;
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+/*--------------------GLOBAL HEADER--------------------*/
+#globalHeader{
+	width:100%;
+	min-width:962px;
+	height:145px;
+	background:url(../images/common/header_bg.jpg) repeat-x #FFF;
+}
+#globalHeader #GHarea{
+	margin:0 auto;
+	padding:0;
+	width:962px;
+	height:100px;
+	position:relative;
+}
+#globalHeader #GHarea h1{
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:27px;
+	left:0px;
+	width:361px;
+	height:0;
+	background:url(../images/common/logo.jpg) 0 0 no-repeat;
+	overflow:hidden;
+	display:block;
+	padding-top:46px;
+}
+#globalHeader #GHarea h2{
+	margin:7px 0 0 12px;
+	padding:0 0 0 8px;
+	height:16px;
+	float:right;
+	background:url(../images/common/arrow.png) 0 0 no-repeat;
+	color:#BBB;
+}
+#globalHeader .content ul li{float:left;}
+
+
+#globalHeader .header_linkbox{
+	position: absolute;
+	right: 0;
+	top: 52px;
+}
+
+#globalHeader .header_linkbox li{
+	float: left;
+	margin-left: 8px;
+}
+#globalHeader #GHarea .header_privacy{
+	margin-right: 200px;
+}
+#globalHeader .beyondlogo{
+    position: absolute;
+    margin: 10px;
+    right: 0;
+}
+/*--------------------CONTENTS--------------------*/
+#contentsPack{
+	width: 1180px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	padding-bottom: 0px;
+	padding-bottom: 274px;
+	position: relative;
+	height: 1410px;
+	left: 0px;
+}
+.rrc {
+    width: 199px;
+	float: left;
+	margin-left: 21px;
+	margin-top: 30px;
+}
+@media only screen and (min-width: 960px) {
+	#contentsPack{
+	left: 0;
+}
+}
+@media only screen and (min-width: 1200px) {
+	#contentsPack{
+	left: 110px;
+	width: 1180px;
+}
+}
+.content{
+	width:962px;
+	margin:0 auto;
+	text-align:left;
+}
+.h30{height:30px;}
+
+#pankuzu{
+	width:960px;
+	height:50px;
+	line-height:45px;
+	border-bottom:#bcbcbc solid 1px;
+	text-align:left;
+}
+#pankuzu ul li{
+	float:left;
+	margin-right:15px;
+	height:24px;
+	font-size:11px;
+	font-weight:bold;
+	color:#da000f;
+}
+.arrow{
+	padding:0 0 0 10px;
+	height:24px;
+	background:url(../images/common/arrow2.png) 0 0 no-repeat;
+}
+
+.title{
+	height:87px;
+	text-align:left;
+}
+.title h1{padding-top:20px;}
+.rrc img{
+    width: 210px;
+	height: 60px;
+}
+.rrc .amazon{
+    width: 120px;
+	height: 240px;
+}
+.rrc #uuWeb img{
+    width: 	140px;
+	height: 32px;
+}
+/*--------------------FOOTER--------------------*/
+#globalFooter{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	min-width:962px;
+	height:274px;
+	background:url(../images/common/footer_bg.jpg) repeat-x #FFF;
+}
+#globalFooter .content ul{
+	width:240px;
+	margin:30px 0 0 0;
+	float:left;
+}
+#globalFooter .content ul li{
+	margin:7px 0 0 0;
+	padding:0 0 0 8px;
+	height:16px;
+	background:url(../images/common/arrow.png) 0 0 no-repeat;
+	color:#EEE;
+	font-size:11px;
+	font-weight:bold;
+}
+
+
+.anchor{
+	margin-top: -10px !important;
+	padding-top: 10px !important;
+}
+
+.clearfix::after {
+	content: ""; 
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	min-height: 1px;
+}
+
+.both{
+	clear:both;
+}
+
+.clear{
+	clear:both;
+}
+
+.clear hr{
+	display: none;
+}
+#partnerNet img:hover{
+	opacity: 0.5;
+}

@@ -1,0 +1,67 @@
+/* =============================================================================
+   ONLINE
+   ========================================================================== */
+h1{
+    font-size: 22px;
+}
+#onlineContents{
+	width:960px;
+	background:url(../images/content_zab.jpg) repeat-y;
+	text-align:left;
+}
+#onlineContents .bottom{
+	width:960px;
+	height:20px;
+	background:url(../images/content_bt.jpg) no-repeat bottom;
+}
+
+#onlineBox{
+	width:960px;
+	margin:0 auto 25px 0;
+}
+#onlineBox .top_list ul{
+	width:880px;
+	overflow:hidden;
+}
+#onlineBox .top_list li{
+	background:url(../../images/common/arrow.png) 0 0 no-repeat;
+	padding:0 0 0 8px;
+	float:left;
+	font-weight:bold;
+	width:auto;
+}
+#onlineBox .online_list{
+	margin-bottom:40px;
+	overflow:hidden;
+}
+#onlineBox .online_list ul{
+	width:220px;
+	float:left;
+}
+#onlineBox .online_list li{
+	background:url(../../images/common/arrow.png) 0 0 no-repeat;
+	margin:7px 0 0 0;
+	padding:0 0 0 8px;
+}
+.lineGray{ border-bottom:#bcbcbc solid 1px;}
+
+
+
+
+
+
+#onlineContents .price {
+	margin-right: 5px;
+}
+#onlineContents .price2 {
+	position: relative;
+	top: 26px;
+}
+#onlineContents .price3 {
+	position: relative;
+	top: -7px;
+	background: none !important;
+}
+#onlineContents .price4 {
+	margin-top: 29px;
+}

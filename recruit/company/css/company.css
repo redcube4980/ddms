@@ -1,0 +1,492 @@
+@charset "utf-8";
+
+/* index */
+.sub_mainVisual{
+	background: url(../images/index/h2_main_visual.jpg) no-repeat;
+	background-size: cover;
+}
+.companyPageLink{
+	position:absolute;
+	bottom:20%;
+	left:50%;
+	font-family:"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "游明朝", YuMincho, serif;
+	font-size:130%;
+	transform: translateX(-50%);
+}
+.companyPageLink li{
+	float:left;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background-color: rgba(0,113,184,0.85);
+}
+.companyPageLink li:last-child{
+	margin-left:30px;
+}
+.companyPageLink li a{
+	color:#FFF;
+	text-decoration:none;
+	display:block;
+	padding:5px 30px;
+}
+.companyPageLink li:hover{
+	background-color: #E7F0FF;
+}
+.companyPageLink li:hover a:hover{
+	color: #666;
+}
+.company.index .companyColumnSet {
+	max-width: 890px;
+	margin: 60px auto 0;
+	position: relative;
+}
+.company.index .companyColumnSet .columnLeft {
+	position: absolute;
+	left: 0;
+	top: 16px;
+}
+.company.index .companyColumnSet .columnRight {
+	position: absolute;
+	right: 0;
+	top: 16px;
+}
+.company.index .companyColumnSet .columnCenter {
+	width: 324px;
+	margin: 0 auto;
+	text-align: center;
+}
+.company.index .companyColumnSet .grayBox {
+	background-color: #959595;
+	color: #fff;
+	font-size: 18px;
+	line-height: 50px;
+	width: 250px;
+	height: 50px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	text-align: center;
+	margin-bottom: 30px;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.6));
+}
+.company.index .companyColumnSet .blueBox {
+	background-color: #4BA8E0;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	width: 265px;
+	border-radius: 4px;
+	text-align: center;
+	margin: 28px auto 0;
+	padding: 18px 0;
+	filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.6));
+}
+.company.index .companyColumnSet .blueBox img {
+	max-width: 233px;
+}
+.company.index .bgNone p.text {
+	max-width: 655px;
+	float: left;
+	font-size: 16px;
+	color: #666;
+	margin-right: 15px;
+}
+.company.index .bgNone p.img {
+	float: left;
+}
+.company.index .panelArea p {
+	text-align: center;
+	color: #0071B8;
+	font-weight: bold;
+	font-size: 22px;
+}
+.company.index .panelArea p.text {
+	margin-bottom: 10px;
+}
+.company.index .dateColmnSet,
+.company.index .numberOfEmployees {
+	max-width: 848px;
+	margin: 0 auto;
+}
+.company.index .dateColmnSet .column1 {
+	float: left;
+	box-shadow: 0px 0px 6px -1px #666 inset;
+  padding: 35px;
+	background-color: #fff;
+}
+.company.index .dateColmnSet .column2 {
+	float: right;
+	box-shadow: 0px 0px 6px -1px #666 inset;
+  padding: 35px;
+	background-color: #fff;
+}
+.company.index .numberOfEmployees .dateTitle{
+	padding-left: 43px;
+}
+.company.index .numberOfEmployees {
+	box-shadow: 0px 0px 6px -1px #666 inset;
+	background-color: #fff;
+	margin-top: 50px;
+	padding: 25px 0;
+}
+.company.index .numberOfEmployees .dateColmnSet {
+	max-width: 644px;
+}
+.company.index .numberOfEmployees .dateColmnSet .columnMens {
+	float: left;
+	max-width: 428px;
+}
+.company.index .numberOfEmployees .dateColmnSet .columnWomens {
+	float: right;
+	max-width: 150px;
+}
+.company.index .dateTitle {
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 8px;
+	margin-bottom: 15px;
+}
+.company.index .dateTitle:before {
+	content: '';
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	background: #0071B8;
+	position: relative;
+	left: -8px;
+	top: 1px;
+}
+/* .company */
+.company section {
+	margin-bottom: 60px;
+}
+.company .columnSet {
+	width: 100%;
+}
+.company .columnSet .columnleft {
+	float: left;
+	max-width: 150px;
+	width: 100%;
+}
+.company .columnSet .columnRight {
+	float: left;
+	max-width: 750px;
+}
+.company .columnSet .columnRight.w910 {
+	float: right;
+	max-width: 910px;
+	width: 100%
+}
+.company .columnSet:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.company .columnSet .columnleft h2 {
+	font-size: 21px;
+	color: #666;
+	font-weight: bold;
+	padding-left: 8px;
+}
+.company .columnSet .columnleft h2:before {
+	content: '';
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	background: #77BAE3;
+	position: relative;
+	left: -8px;
+	top: 1px;
+}
+
+/* outline */
+.company .outline table tr {
+	border-bottom: dotted 2px #BFBFBF;
+}
+.company .outline table tr:first-child {
+	border-top: dotted 2px #BFBFBF;
+}
+.company .outline table th {
+	min-width: 110px;
+	background-color: #E7F0FF;
+	text-align: center;
+	color: #666;
+	font-weight: normal;
+}
+.company .outline table td {
+	width: 640px;
+	background-color: #FFF;
+	padding: 13px 20px;
+	color: #666;
+	line-height: 1.5em;
+}
+.company .outline table td ol li {
+	list-style-type: decimal;
+	margin-left: 1.5em;
+	line-height: 2.5em;
+}
+.company .history .historyList {
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+.company .history .historyList.halfBox {
+	float: left;
+	min-width: 360px;
+	margin-left: 30px;
+	background-color: #E7F0FF;
+}
+.company .history .historyList.full {
+	width: 96%;
+	background-color: #E7F0FF;
+	float: none;
+	clear: both;
+	padding: 2%;
+}
+.company .history .historyList.halfBox:first-child {
+	margin-left: 0;
+}
+.company .history .historyList p span {
+	color: #0071B8;
+	display: block;
+	font-weight: bold;
+}
+.company .history .historyList p span.arrow {
+	color: #AFAFAF;
+}
+/* network */
+.network .columnSet .columnRight.w910 img {
+	max-width: 910px;
+}
+/* global */
+.company .global .topics {
+	border-bottom: 1px solid #3671B8;
+	padding: 40px 0;
+}
+.company .global .topics:first-child {
+	border-top: 1px solid #3671B8;
+}
+.company .global .topicsColumnSet {
+	width: 100%;
+}
+.company .global .topicsColumnSet:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.company .global .topicsColumnSet .topicsColumnLeft {
+	float: left;
+	width: 480px;
+	margin-right: 62px;
+}
+.company .global .topicsColumnSet .topicsColumnLeft h3 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #666;
+	line-height: 1.2em;
+	margin-bottom: 32px;
+}
+.company .global .topicsColumnSet .topicsColumnLeft h3 span {
+	font-size: 21px;
+}
+.company .global .topicsColumnSet .topicsColumnLeft p {
+	font-size: 16px;
+	color: #666;
+}
+.company .global .topicsColumnSet .topicsColumnRight {
+	float: left;
+	width: 368px;
+}
+
+/* Responsive Setting
+=========================================================================================== */
+@media screen and (max-width: 1059px) {
+.company .columnSet .columnleft {
+	width: 15%;
+}
+.company .outline .columnSet .columnRight,
+.company .history .columnSet .columnRight,
+.company .outline .columnSet .columnRight table {
+	width: 100%;
+	max-width: 100%;
+}
+.company .columnSet .columnRight,
+.company .columnSet .columnRight.w910 {
+	width: 85%;
+}
+.company .global .topicsColumnSet .topicsColumnLeft {
+	width: 50%;
+	margin-right: 2%;
+}
+.company .global .topicsColumnSet .topicsColumnRight {
+	width: 48%;
+}
+.company .history .historyList.halfBox {
+	min-width: auto;
+	width: 45%;
+	margin-left: 0;
+	padding: 2%;
+	margin-bottom: 10px;
+}
+.company .history .historyList.halfBox.lastR {
+	float: right;
+}
+.company .columnSet .columnleft {
+	float: none;
+	margin: 0 0 20px;
+	width: 100%;
+	max-width: 100%;
+}
+/* index */
+.company.index .bgNone {
+	width: 100%;
+}
+.company.index .bgNone p.text {
+	width: 60%;
+}
+.company.index .bgNone p.img {
+	width: 35%;
+	max-width: 338px;
+}
+.company.index .bgSkyBlue .spBox {
+	width: 100%;
+}
+.company.index .numberOfEmployees {
+  margin: 20px auto 20px;
+}
+.company.index .dateColmnSet {
+	width: 96%;
+	margin: 0 auto;
+}
+.company.index .dateColmnSet .column1,
+.company.index .dateColmnSet .column2 {
+	padding: 2%;
+	max-width: 400px;
+	float: left;
+	width: 45%;
+}
+.company.index .dateColmnSet .column2 {
+	margin-left: 2%;
+}
+}
+@media screen and (max-width: 910px) {
+.company.index .companyColumnSet .columnCenter {
+	width: 324px;
+	margin: 0 auto 30px;
+}
+.company.index .companyColumnSet .columnLeft,
+.company.index .companyColumnSet .columnRight {
+	position: static;
+	float: left;
+	width: 50%;
+}
+.company.index .companyColumnSet .grayBox {
+	margin: 0 auto 15px;
+}
+.company.index .numberOfEmployees {
+	max-width: 96%;
+}
+}
+@media screen and (max-width: 767px) {
+.company .columnSet .columnleft {
+	float: none;
+	margin: 0 0 20px;
+	width: 100%;
+	max-width: 100%;
+}
+.company .columnSet .columnRight {
+	float: none;
+}
+.company .columnSet .columnRight.w910 {
+	float: none;
+	width: 100%
+}
+.company .global .topicsColumnSet .topicsColumnLeft {
+	float: none;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.company .global .topicsColumnSet .topicsColumnRight {
+	float: none;
+	width: 100%;
+}
+
+/* index */
+.companyPageLink{
+	position:static;
+	transform:none;
+	margin-bottom:30px;
+}
+.companyPageLink li{
+	width:48%;
+	text-align:center;
+	background-color:#0071B8;
+}
+.companyPageLink li a{
+	padding:5px 5%;
+}
+.companyPageLink li:last-child{
+	margin-left:4%;
+}
+.companyPageLink.showSp li:hover{
+	background-color:#0071B8;
+	opacity: 0.75;
+	-moz-opacity: 0.75;
+	filter: alpha(opacity=75);
+}
+.companyPageLink.showSp li:hover a{
+	color:#FFF;
+}
+.company.index .bgNone p.text {
+	width: 100%;
+	float: none;
+	margin-right: 0;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.company.index .bgNone p.img {
+	float: none;
+	width: 100%;
+	max-width: 338px;
+	margin: 0 auto;
+}
+.company.index .bgNone {
+	margin-bottom: 90px;
+}
+.company.index .companyColumnSet .columnLeft,
+.company.index .companyColumnSet .columnRight {
+	float: none;
+	width: 100%;
+}
+.company.index .dateColmnSet {
+	width: 100%;
+}
+.company.index .dateColmnSet .column1,
+.company.index .dateColmnSet .column2 {
+	float: none;
+	width: 100%;
+	max-width: 90%;
+	margin: 0 auto 20px;
+}
+.company.index .numberOfEmployees .dateColmnSet .columnMens,
+.company.index .numberOfEmployees .dateColmnSet .columnWomens {
+	float: none;
+	margin: 0 auto;
+	width: 90%;
+}
+.company.index .numberOfEmployees {
+	max-width: 94%;
+}
+}
+@media screen and (max-width: 579px) {
+}
+@media screen and (max-width: 399px) {
+.company.index .companyColumnSet .columnCenter {
+	width: 100%;
+}
+.company.index .companyColumnSet .columnCenter p.img {
+	padding: 0 2%;
+}
+}

@@ -1,0 +1,63 @@
+/* body {-webkit-transform:translate3d(0,0,0);} */
+
+#ScrollLayer { 
+/*
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+*/
+}
+
+#ControlBar {
+  height: 104px;
+}
+#ControlBar input[type=image] {
+  height: 104px;
+}
+
+#ControlBar img[type=image] {
+  height: 104px;
+}
+
+#ControlBar #PageNumber {
+  font-size:40px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+#ControlBar.large {
+  height: 170px;
+}
+#ControlBar.large input[type=image] {
+  height: 170px;
+}
+#ControlBar.large #PageNumber {
+  font-size:80px;
+}
+
+.Page {
+}
+
+.ThumbPage {
+  background-color: #ffffff;
+}
+.ThumbPage .ThumbPageNumber {
+  font-size:15px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.zoomInOutTransition {
+/*
+  -webkit-transition-property: transform;
+*/
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+/*
+  -webkit-transition-timing-function: ease-in-out;
+*/
+}
+
+.scrollTransition {
+  -webkit-transition-property: left, top;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+}

@@ -1,0 +1,162 @@
+body {
+/*
+    background-image: url(../images/backgroundStripes.png);
+    background-repeat: repeat;
+*/
+    background-color:white;
+    margin: 0px;
+    padding: 0px;
+    min-height: 356px;
+    font-family: Helvetica;
+}
+
+#browser {
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    position: relative;
+    width: auto;
+}
+
+#header {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 44px;
+    width: auto;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0px;
+    font-size: 16pt;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 0px;
+    border-left-width: 1px;
+/*
+    -webkit-border-image: url(../images/header.png) 0 1 0 1 stretch stretch;
+*/
+    background-image:url(../images/header.png);  / for metro */
+}
+
+#header p { 
+    margin:0px;
+    line-height: 44px;
+}
+
+#contents {
+    background-color: white;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    position: relative;
+    width: auto;
+    font-size: 20px;
+}
+
+.link_button {
+    height: 60px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align:center;
+    color: #ffffff;
+    background-color:#aaaaaa;
+    padding:5px 10px;
+    text-decoration:none;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#search_form {
+    padding-top:20px;
+    text-align:center;
+}
+/* For disabling auto zooming when input element is focused. */
+input {
+    font-size: 16px;
+}
+#search_form input[type="text"] { 
+    width: 80%;
+}
+#search_button_container {
+    margin-top: 30px;
+}
+#search_button_container .link_button {
+    margin: 0px 20px;
+}
+
+#str_msg .warn {
+    color:red;
+    font-weight:bold;
+}
+
+#resultsList {
+    background-color: white;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    position: relative;
+    width: auto;
+}
+
+.resultsListRow {
+    position: relative;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    -webkit-margin-top-collapse: separate;
+    -webkit-margin-bottom-collapse: separate;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-color: rgb(224, 224, 224);
+    width: auto;
+}
+
+.back {
+    text-align:center;
+}
+
+#result_nav {
+    text-align:center;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.navi_act_arrow {
+    cursor: pointer;
+    background-color: #dddddd;
+    color: blue;
+    padding:5px 20px;
+    margin: 0px 10px;
+}
+.navi_inact_arrow {
+    cursor: default;
+    background-color: #dddddd;
+    color: gray;
+    padding:5px 20px;
+    margin: 0px 10px;
+}
+.navi_number {
+    cursor: pointer;
+    color:blue;
+    text-decoration: underline;
+    margin: 0px 10px;
+}
+.navi_number_current {
+    cursor: pointer;
+    margin: 0px 10px;
+}

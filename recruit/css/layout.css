@@ -1,0 +1,74 @@
+/* =============================================================================
+   RECRUIT
+   ========================================================================== */
+
+#recruitContents{
+	width:960px;
+	background:url(../images/content_zab.jpg) repeat-y;
+	text-align:left;
+}
+#recruitContents .bottom{
+	width:960px;
+	height:20px;
+	background:url(../images/content_bt.jpg) no-repeat bottom;
+}
+.btnCenter{
+	width:370px;
+	margin:25px auto 15px auto;
+}
+.btnCenterAGN{
+	width:234px;
+	margin:25px auto 15px auto;
+	font-size:95%;
+}
+#tableBox{
+	width:880px;
+	margin:40px auto 25px auto;
+}
+#tableBox table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+#tableBox th,
+#tableBox td {
+	border:#cccccc solid 1px;
+}
+.tLc{
+	width:170px;
+	text-align:left;
+	vertical-align:middle;
+}
+.tLc p{
+	font-size:13px;
+	padding:15px;
+}
+.tTc{
+	width:170px;
+	text-align:left;
+	vertical-align:top;
+}
+.tTc p{
+	font-size:13px;
+	padding:15px;
+}
+.tRc{
+	width:710px;
+	text-align:left;
+	vertical-align:middle;
+}
+.tRc p{
+	font-size:13px;
+	padding:15px;
+}
+.recruitBox{
+	width:880px;
+	margin:40px auto 0 auto;
+	color:#666666;
+	font-weight:bold;
+	font-size:13px;
+	line-height:2;
+	text-align:left;
+}
+.recruitBox .Lc{width:640px;float:left;text-align:left;}
+.recruitBox .Rc{line-height:1.5;width:195px;float:right;text-align:center;}
+.line{margin:50px 0 0 0;}

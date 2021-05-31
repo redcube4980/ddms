@@ -1,0 +1,108 @@
+/* =============================================================================
+   INDEX
+   ========================================================================== */
+
+/*--------------------imageViewer--------------------*/
+#mainVisualArea{
+	width:100%;
+	min-width:962px;
+	height:360px;
+	background:#000;
+}
+#mainVisual{
+	position:relative;
+	width:962px;
+	margin:0 auto;
+}
+#mainVisual #viewerVisualArea{
+	width:962px;
+	height:360px;
+}
+#mainVisual #viewerVisualArea .visual{
+	top:0;
+	left:0;
+	position:absolute;
+	filter:alpha(opacity=0);
+ 	-moz-opacity:0;
+ 	opacity:0;
+	z-index:10;
+	width:962px;
+}
+#mainVisual .navi{
+	top:318px;
+	right:30px;
+	position:absolute;
+	z-index:200;
+	width:92px;
+}
+#mainVisual .navi ul{
+	height:13px;
+}
+#mainVisual .navi ul li {
+	width:13px;
+	height:13px;
+	list-style:none;
+	float:left;
+	margin:0 0 0 10px;
+	padding:0;
+}
+#mainVisual .navi ul li a {
+	display:block;
+	height:13px;
+	float:left;
+	text-indent:-9999px;
+}
+.visual_navi1 a,
+.visual_navi2 a,
+.visual_navi3 a,
+.visual_navi4 a{
+	background-image:url(../images/index/btn_visual_off.png);
+	width:13px;
+	height:13px;
+	display:block;
+}
+.visual_navi1 a.now,
+.visual_navi2 a.now,
+.visual_navi3 a.now,
+.visual_navi4 a.now{
+	background-image:url(../images/index/btn_visual_on.png);
+}
+
+/*--------------------Navi--------------------*/
+#Navi2nd{
+	width:100%;
+	min-width:962px;
+	height:46px;
+	background:url(../images/index/index_bar.jpg) repeat-x #FFF;
+}
+#Navi2nd .content ul li{float:left;}
+
+/*--------------------Contents--------------------*/
+
+#topContents {
+	width:960px;
+	background:url(../images/index/topcontent_zab.gif) repeat-y;
+}
+#topContents .head {
+	width:960px;
+	height:20px;
+	background:url(../images/index/topcontent_hd.gif) no-repeat bottom;
+}
+#topContents .bottom {
+	clear:both;
+	width:960px;
+	height:20px;
+	background:url(../images/index/topcontent_bt.gif) no-repeat bottom;
+}
+
+#topBox{
+	font-size:13px;
+	margin:0;
+}
+
+#topBox iframe{
+	border:none;
+	width:960px;
+	height:500px;
+}
+

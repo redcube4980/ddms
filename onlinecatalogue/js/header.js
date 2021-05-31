@@ -1,0 +1,2 @@
+/*! $Id: header.js 122 2012-02-15 06:11:18Z tomita $ */
+(function(){function b(){var d=document.getElementById("BtnHelp");var c;if(FeatureSmartPhone){c="./help/help_s.html"}else{c="./help/help.html"}d.onclick=function(){window.open(c,"eBOOKhelp","width=450,height=650,scrollbars=yes,status=no,left=0,top=0")}}function a(){EBUtil.setupRollOver(document);b()}if(window.attachEvent){window.attachEvent("onload",a)}else{window.addEventListener("load",a,false)}})();

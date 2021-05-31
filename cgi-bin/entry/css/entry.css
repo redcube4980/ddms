@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+/* index */
+
+#entryContents p.entryText{
+	margin-bottom:20px;
+}
+#entryContents table{
+	margin-bottom:50px;
+}
+#entryContents table tr {
+	border-bottom: dotted 2px #BFBFBF;
+}
+#entryContents table tr:first-child {
+	border-top: dotted 2px #BFBFBF;
+}
+
+#entryContents table th{
+	min-width: 110px;
+	background-color: #E7F0FF;
+	color: #666;
+	font-weight: bold;
+	width: 23%;
+	padding: 10px 20px;
+}
+
+#entryContents table td{
+	width: 82%;
+	background-color: #FFF;
+	padding: 13px 20px;
+	color: #666;
+	line-height: 1.5em;
+}
+#entryContents .entryRequired {
+	background-color: #d00c1a;
+	color: #fff;
+	padding: 2px 7px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.ml10{
+	margin-left:10px;
+}
+.fL_Text{
+	float:left;
+	margin-right:10px;
+}
+.selectText{
+	display:inline;
+}
+
+.txtbox_01 input {  
+	width: 80%;
+	height:24px;
+	font-size: 12px; 
+}
+.txtbox_02{
+	height:24px;
+	float:left;
+}
+.txtbox_02 input {  
+	width: 60px;
+	height:24px;
+	font-size: 12px;
+}
+.txtbox_03{
+	height:24px;
+}
+.txtbox_03 input {  
+	width: 70px;
+	height:24px;
+	font-size: 12px;
+}
+.txtbox_04{
+	height:24px;
+	float:left;
+}
+.txtbox_04 input {  
+	width: 214px;
+	height:24px;
+	font-size: 12px;
+}
+
+.radioBox{
+	margin-top:15px;
+}
+.selectBox{
+	margin :15px 0 10px;
+}
+.licenseBox{
+	float:left;
+	width:70%;
+}
+.licenseBox input{
+	width:100%;
+}
+
+#entryContents .btnCenter{
+	margin:0 auto 50px;
+	max-width:269px;
+}
+#entryContents .btnCenter .ovImg{
+	max-width:269px;
+}
+#entryContents .btnCenter_02{
+	margin:0 auto 50px;
+	max-width:164px;
+}
+#entryContents .btnCenter_02 .ovImg{
+	max-width:164px;
+}
+#entryContents .btnCenter_03{
+	margin:0 auto 50px;
+	max-width:199px;
+}
+#entryContents .btnCenter_03 .ovImg{
+	max-width:199px;
+}
+
+/* Responsive Setting
+=========================================================================================== */
+@media screen and (max-width: 1059px) {
+#entryContents table{
+	width:100%;
+}
+#entryContents table tr{
+	padding:15px 0;
+	display:block;
+}
+#entryContents table th,
+#entryContents table td{
+	display:block;
+	width:100%;
+	padding:0;
+	margin-bottom:10px;
+}
+#entryContents table th{
+	background:none;
+}
+
+.txtbox_01 input{
+	width:100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.txtbox_05{
+	width:100%;
+}
+}
+@media screen and (max-width: 910px) {
+}
+@media screen and (max-width: 767px) {
+.licenseBox{
+	float:none;
+	width:100%;
+}
+.selectText{
+	display:block;
+}
+.txtbox_04{
+	float:none;
+	margin-bottom: 15px;
+}
+
+}
+@media screen and (max-width: 579px) {
+}
+@media screen and (max-width: 399px) {
+}

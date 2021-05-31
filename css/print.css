@@ -1,0 +1,17 @@
+@charset "Shift_JIS";
+
+/*
+______________________________________________
+
+ update:2012.10.01
+ Copyright:(c)2012 Dexerials Corporation.
+ Copyright:(c)visual and echo japan
+______________________________________________
+*/
+
+/* For Print
+---------------------------------------------*/
+
+#globalFooter{
+	display:none;
+}

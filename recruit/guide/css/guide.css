@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* .guide */
+.guide p.caption {
+	font-size: 20px;
+	line-height: 3em;
+}
+.guide .guideline {
+	max-width: 848px;
+	margin: 0 auto 60px;
+}
+.guide .guideline table{
+	margin-bottom:50px;
+}
+.guide .guideline table tr {
+	border-bottom: dotted 2px #BFBFBF;
+}
+.guide .guideline table tr:first-child {
+	border-top: dotted 2px #BFBFBF;
+}
+.guide .guideline table th {
+	min-width: 110px;
+	background-color: #E7F0FF;
+	text-align: center;
+	color: #666;
+	font-weight: normal;
+}
+.guide .guideline table td {
+	background-color: #FFF;
+	padding: 13px 20px;
+	color: #666;
+	line-height: 1.5em;
+}
+.guide .guideline .btnCenterAGN {
+	width: 234px;
+	margin: 25px auto 15px auto;
+	font-size: 95%;
+	color: #666;
+	font-size: 11px;
+}
+.guide .guideline .btnCenterAGN img {
+	margin-top: 10px;
+}
+.guide .guideline .guideText{
+	text-align:center;
+}
+@media screen and (max-width: 767px) {
+.guide .guideline .guideText{
+	text-align: left;
+}	
+}

@@ -1,0 +1,68 @@
+<html>
+<head>
+<title></title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Shift_JIS">
+<meta id="viewport" name="viewport" content="target-densitydpi=device-dpi, width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<link rel="apple-touch-icon" href="./images/touch_icon.png" />
+<script>
+var ua = navigator.userAgent.toLowerCase();
+var osVersion;
+if (ua.match(/android\s+([0-9.]+)/)) {
+  osVersion = RegExp.$1;
+}
+if (osVersion && parseFloat(osVersion) >= 4.0) {
+  document.write('<link rel="stylesheet" href="./css/main4.css" />');
+} else {
+  document.write('<link rel="stylesheet" href="./css/main.css" />');
+}
+</script>
+<script language="JavaScript" src="./mobile_safari.js"></script>
+<script language="JavaScript" src="./page_image.js"></script>
+<script language="JavaScript" src="./gesture.js"></script>
+<script language="JavaScript" src="../js/documentinfo.js"></script>
+<script language="JavaScript" src="../js/config.js"></script>
+<script language="JavaScript" src="../js/lang.js"></script>
+<script language="JavaScript" src="../js/ebutil.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+//閉じるボタンでウィンドウを閉じるここから↓↓↓↓↓
+function closeWindow() { 
+window.opener = window; 
+var win = window.open( location.href, "_self" ); 
+win.close(); 
+}
+//閉じるボタンでウィンドウを閉じるここまで↑↑↑↑↑
+
+
+//-->
+</script>
+</head>
+<body bgcolor="#808080" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="setTimeout(function(){onInitialize()}, 500);" style="overflow:hidden;padding:0px;">
+  <div id="ViewCatalog">
+    <div id="ScrollArea" style="position:absolute;overflow:hidden;">
+      <div id="ScrollLayer" style="position:absolute;top0px;left:0px;">
+      </div>
+    </div>
+    <div id="ControlBar" style="background-image:url(images/bg01.gif);background-repeat:repeat-x;background-size:contain;position:absolute; text-align:center;width:100%;">
+      <table style="width:100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td style="width:20%;text-align:center;"><input type="image" src="images/mokuji01.gif" alt="目次" id="目次" value="目次" onclick="window.open('contents.html')"><!--<input type="image" src="images/kensaku01.gif" style="margin-left:10px;" alt="検索" id="検索" value="検索" onclick="EBUtil.openTemporaryWindow('../sp/searchw.html', 'contents');">--></td>
+          <td style="width:40%;text-align:left;">
+            <table style="width:100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="width:50%;text-align:center;"><span id="PageNumber"></span></td>
+                <td style="width:50%;text-align:right;"><input name="close" type="image" src="images/close01.gif" alt="閉じる" id="閉じる" onclick="closeWindow()" value="閉じる" /></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="ViewThumbnail" style="display:none;">
+    <div id="ThumbScrollArea" style="position:absolute;overflow:hidden;">
+    </div>
+  </div>
+</body>
+</html>

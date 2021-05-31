@@ -1,0 +1,40 @@
+#eds-box {
+    background: #efefef;
+    border-radius: 5px;
+	margin-bottom: 30px;
+}
+#eds-box img{
+    margin-top: 50px;
+}
+#eds-box p{
+    margin: auto;
+	margin-top: 20px;
+    width: 656px;
+    font-size: 13px;
+    text-align: left;
+}
+#eds-box p span{
+    font-size: 10px;
+}
+#eds-box ul{
+    margin: auto;
+	margin-top: 20px;
+    width: 656px;
+    font-size: 13px;
+    text-align: left;
+}
+#eds-box ul li{
+    margin-bottom: 10px;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+#eds-box ul li::before {
+    content: '';
+	display: inline-block;
+    background-image: url("../images/point-red.png");
+    background-size: contain;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+	margin-right: 3px;
+}

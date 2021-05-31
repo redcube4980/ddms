@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=Shift_JIS" />
+    <title></title>
+    <script type="text/javascript" src="js/documentinfo.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
+    <script type="text/javascript" src="js/ebutil.js"></script>
+
+<style type="text/css">
+<!--
+body {
+	padding:0px;
+	margin:0px;
+	background-color:white;
+	overflow: hidden;
+}
+img {
+	margin:0px;
+	border: none;
+	vertical-align:bottom;
+}
+table {
+	border-collapse:collapse;
+	padding:0px;
+	border:none;
+}
+td {
+	padding:0px;
+	margin:0px;
+	border:none;
+}
+-->
+</style> 
+<script language="javascript">
+function openLinkPage(page) {
+	var pg = EBUtil.getQueryParam(window, "pg");
+	pg = parseInt(pg, 10);
+
+	var leftPg  = IsLeftTemplate ? pg : pg + 1;
+	var rightPg = IsLeftTemplate ? pg + 1 : pg;
+
+	var targetPg = page == "L" ? leftPg : rightPg;
+
+	if (typeof DLFileMap[targetPg] == "undefined") {
+		alert("本ページにはダウンロード可能なファイルがありません。");
+		return;
+	}
+	var url = DLFileMap[targetPg];
+	window.open(url, 'cad', 'width=465, height=600');
+	self.close();
+}
+
+function onLoad()
+{
+	var pg = EBUtil.getQueryParam(window, "pg");
+	pg = parseInt(pg, 10);
+
+	var leftPg  = IsLeftTemplate ? pg : pg + 1;
+	var rightPg = IsLeftTemplate ? pg + 1 : pg;
+
+	if (typeof DLFileMap[leftPg] != "undefined") {
+		document.getElementById("leftCAD").innerHTML = '<img src="skinimage/cad/left.gif" width="82" height="22" style="cursor:pointer" Onclick="openLinkPage(\'L\')" />';
+	}
+
+	if (typeof DLFileMap[rightPg] != "undefined") {
+		document.getElementById("rightCAD").innerHTML = '<img src="skinimage/cad/right.gif" width="82" height="22" style="cursor:pointer" Onclick="openLinkPage(\'R\')" />';
+	}
+
+	// Chromeだとサイズ指定が効かない場合がある(Ver.依存？)ので、ここで強制的に変更
+	if (navigator.userAgent.indexOf("Chrome") > -1)
+		window.resizeTo(360, 200);
+
+	document.title = Lang.WindowTitle;
+}
+
+</script>
+  </head>
+  <body onload="onLoad()" oncontextmenu="return false" ondragstart="return false">
+    <div style="text-align:center;background-color:gray;"><img src="skinimage/cad/cad.jpg" width="360" height="51" /></div>
+
+    <table style="width:100%;margin:14px 0px;">
+      <tr>
+	<td align="center" width="180"><div id="leftCAD"></div></td>
+	<td align="center" width="180"><div id="rightCAD"></div></td>
+      </tr>
+    </table>
+    <div style="text-align:center;"><a href="javascript:self.close()"><img src="skinimage/cad/close.gif" width="82" height="22" /></a></div>
+
+  </body>
+</html>

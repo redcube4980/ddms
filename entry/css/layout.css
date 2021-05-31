@@ -1,0 +1,177 @@
+/* =============================================================================
+   entry
+   ========================================================================== */
+
+#entryContents{
+	width:960px;
+	background:url(../images/content_zab.jpg) repeat-y;
+	text-align:center;
+}
+#entryContents .bottom{
+	width:960px;
+	height:20px;
+	background:url(../images/content_bt.jpg) no-repeat bottom;
+}
+#tableBox{
+	width:880px;
+	margin:40px auto 25px auto;
+	font-size:13px;
+}
+#tableBox table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+#tableBox th,
+#tableBox td {
+	border:#cccccc solid 1px;
+}
+.tLc{
+	width:190px;
+	text-align:left;
+	vertical-align:middle;
+}
+.tLc p{
+	padding:15px 0 15px 15px;
+}
+.tLt{
+	width:190px;
+	text-align:left;
+	vertical-align:top;
+}
+.tLt p{
+	padding:15px;
+}
+.tRc{
+	width:690px;
+	text-align:left;
+	padding:12px 0 15px 15px;
+}
+.tRc p{
+}
+
+/* テキストエリア
+----------------------------------------------------*/
+.txtbox_01{
+	background-image:url(../images/txtarea_bg_01.jpg);
+	background-repeat:no-repeat;
+	width: 360px;
+	height:24px;
+	float:left;
+}
+.txtbox_01 input {  
+	width: 360px;
+	height:24px;
+	font-size: 12px; 
+    border: none;  
+    background: none;  
+}
+
+.txtbox_02{
+	background-image:url(../images/txtarea_bg_02.jpg);
+	background-repeat:no-repeat;
+	width: 60px;
+	height:24px;
+	float:left;
+}
+.txtbox_02 input {  
+	width: 60px;
+	height:24px;
+	font-size: 12px;
+    border: none;  
+    background: none;   
+}
+.txtbox_03{
+	background-image:url(../images/txtarea_bg_03.jpg);
+	background-repeat:no-repeat;
+	width: 70px;
+	height:24px;
+	float:left;
+}
+.txtbox_03 input {  
+	width: 70px;
+	height:24px;
+	font-size: 12px;
+    border: none;
+    background: none;
+}
+.txtbox_04{
+	background-image:url(../images/txtarea_bg_04.jpg);
+	background-repeat:no-repeat;
+	width: 214px;
+	height:24px;
+	float:left;
+}
+.txtbox_04 input {  
+	width: 214px;
+	height:24px;
+	font-size: 12px;
+    border: none;
+    background: none;
+}
+
+/* テキストフィールド
+----------------------------------------------------*/
+.txtbox_05{
+	background-image:url(../images/txtarea_bg_05.jpg);
+	background-repeat:repeat-y;
+	width: 480px;
+	height:185px;
+    border: none;  
+	resize:none;
+	overflow:auto;
+}
+.txtbox_05 input {  
+	width: 480px;
+	height:185px;
+    border: none;
+    background: none;
+}
+
+/* 必須画像
+----------------------------------------------------*/
+.required_entry{
+	margin:15px 15px 0 0;
+	padding:0;
+}
+
+/* 確認ボタン
+----------------------------------------------------*/
+.btnCenter{
+	width:269px;
+	height:55px;
+	position:relative;
+	margin:25px auto 15px auto;
+}
+.btnCenter p{
+	width:269px;
+	height:55px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.btnCenter_02{
+	width:164px;
+	height:55px;
+	position:relative;
+	margin:25px auto 15px auto;
+}
+.btnCenter_02 p{
+	width:164px;
+	height:55px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.btnCenter_03{
+	width:199px;
+	height:55px;
+	position:relative;
+	margin:25px auto 15px auto;
+}
+.btnCenter_03 p{
+	width:199px;
+	height:55px;
+	position:absolute;
+	top:0;
+	left:0;
+}

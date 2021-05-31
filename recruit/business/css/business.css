@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+/* .business */
+.sub_mainVisual{
+	background: url(../images/index/h2_main_visual.jpg) no-repeat;
+	background-size: cover;
+}
+.business section {
+	margin-bottom: 60px;
+}
+.business section.bgSkyBlue h4 {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px 0 30px;
+}
+.business section.bgSkyBlue .serviceColumnSet {
+	max-width: 980px;
+	margin: 0 auto;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1 {
+	max-width: 230px;
+	margin-left: 20px;
+	float: left;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1 .serviceTitle {
+	background-color: #3671B8;
+	min-height: 40px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 40px;
+	padding-left: 16px;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1 .serviceText {
+	background-color: #fff;
+	font-size: 16px;
+	color: #666;
+	padding: 15px 5px ;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1 .serviceTitle:before {
+	content: '';
+	width: 12px;
+	height: 11px;
+	display: inline-block;
+	background: url(../images/index/arrow_white.png) no-repeat;
+	position: relative;
+	left: -5px;
+	top: -1px;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1 .serviceTitle a {
+	color: #fff;
+	text-decoration: none;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1 .serviceTitle a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1:first-child {
+	margin-left: 0;
+}
+.business .chapter {
+	max-width: 980px;
+	border-top: 1px solid #3671B8;
+	padding: 13px 0 50px;
+	margin: 0 auto;
+}
+.business .chapter .chapterTitle {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 30px;
+	padding-left: 8px;
+}
+.business .chapter .chapterTitle:before {
+	content: '';
+	width: 12px;
+	height: 11px;
+	display: inline-block;
+	background: url(../images/index/arrow_blue.png) no-repeat;
+	position: relative;
+	left: -5px;
+	top: -1px;
+}
+.business .chapter h4 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #666;
+	line-height: 1.2em;
+	margin-bottom: 32px;
+}
+.business .chapter h4 span {
+	font-size: 21px;
+}
+.business .businessColumnSet:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.business .businessColumnSet .businessColumnLeft {
+	float: left;
+	max-width: 480px;
+	margin-right: 62px;
+}
+.business .businessColumnSet .businessColumnLeft p {
+	font-size: 16px;
+	color: #666;
+}
+.business .businessColumnSet .businessColumnRight {
+	float: left;
+}
+.business .businessColumnSet .businessColumnRight .img {
+	margin-bottom: 10px;
+}
+.business .businessColumnSet .businessColumnRight dl dt,dd {
+	color: #666;
+	font-size: 13px;
+	float: left;
+}
+.business .businessColumnSet .businessColumnRight dl dt {
+	margin-right: 10px;
+}
+
+/* Responsive Setting
+=========================================================================================== */
+@media screen and (max-width: 1059px) {
+.business section.bgSkyBlue .serviceColumnSet {
+	width: 100%;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1 {
+	margin-right: 2%;
+	margin-left: 0;
+	width: 22.5%;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1:first-child {
+	margin: 0 2% 20px;
+}
+.business .businessColumnSet .businessColumnRight {
+	width: 49%;
+}
+.business .businessColumnSet .businessColumnLeft {
+	margin-right: 2%;
+	width: 49%;
+}
+}
+@media screen and (max-width: 910px) {
+}
+@media screen and (max-width: 767px) {
+.business section.bgSkyBlue .serviceColumnSet .column1 .serviceTitle a {
+	font-size: 4vw;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1 .serviceTitle {
+	padding-left: 12px;
+	font-size: 4vw;
+}
+.business .businessColumnSet .businessColumnRight {
+	width: 100%;
+	float: none;
+}
+.business .businessColumnSet .businessColumnLeft {
+	max-width: 100%;
+	margin-right: 0;
+	width: 100%;
+	float: none;
+	margin-bottom: 20px;
+}
+.business section.bgSkyBlue .serviceColumnSet .column1 {
+	margin: 0 2% 20px;
+	width: 100%;
+	max-width: 96%;
+}
+}
+@media screen and (max-width: 579px) {
+}
+@media screen and (max-width: 399px) {
+}

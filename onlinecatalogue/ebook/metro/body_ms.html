@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title></title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Shift_JIS">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="apple-touch-icon" href="./images/touch_icon.png" />
+<link rel="stylesheet" href="./css/main.css" />
+<script language="JavaScript" src="./mobile_safari.js"></script>
+<script language="JavaScript" src="./page_image.js"></script>
+<script language="JavaScript" src="./gesture.js"></script>
+<script language="JavaScript" src="../js/documentinfo.js"></script>
+<script language="JavaScript" src="../js/config.js"></script>
+<script language="JavaScript" src="../js/lang.js"></script>
+<script language="JavaScript" src="../js/ebutil.js"></script>
+</head>
+<body bgcolor="#808080" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="onInitialize();" style="overflow:hidden;padding:0px;">
+  <div id="ViewCatalog">
+    <div id="ScrollArea" style="position:absolute;overflow:hidden;">
+      <div id="ScrollLayer" style="position:absolute;left:0px;top:0px;">
+      </div>
+    </div>
+    <div id="ControlBar" style="background-image:url(images/bg01.gif);background-repeat:repeat-x;position:absolute; text-align:center;height:50x;width:100%;">
+      <table style="width:100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+<!--
+          <td style="width:40%;text-align:right;"><input type="image" src="images/thumbnail01.gif" alt="サムネイル" id="サムネイル" value="サムネイル" onclick="onClickThumbnail()"></td>
+-->
+          <td style="width:20%;text-align:center;"><input type="image" src="images/mokuji01.gif" alt="目次" id="目次" value="目次" onclick="window.open('contents.html', 'contents');"><!--<input type="image" src="images/kensaku01.gif" style="margin-left:0px;" alt="検索" id="検索" value="検索" onclick="EBUtil.openTemporaryWindow('../sp/searchw.html', 'contents');">--></td>
+          <td style="width:40%;text-align:left;">
+            <table style="width:100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td style="width:50%;text-align:center;"><span id="PageNumber"></span></td>
+                <td style="width:50%;text-align:right;"><input name="close" type="image" src="images/close01.gif" alt="閉じる" id="閉じる" onclick="window.close();" value="閉じる" /></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="ViewThumbnail" style="display:none;">
+    <div id="ThumbScrollArea" style="position:absolute;overflow:hidden;">
+    </div>
+  </div>
+</body>
+</html>

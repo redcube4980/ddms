@@ -1,0 +1,196 @@
+/* =============================================================================
+   INDEX
+   ========================================================================== */
+
+/*--------------------imageViewer--------------------*/
+#mainVisualArea{
+	width:100%;
+	min-width:962px;
+	height:360px;
+	background:#000;
+}
+#mainVisual{
+	position:relative;
+	width:962px;
+	margin:0 auto;
+}
+#mainVisual #viewerVisualArea{
+	width:962px;
+	height:360px;
+}
+#mainVisual #viewerVisualArea .visual{
+	top:0;
+	left:0;
+	position:absolute;
+	filter:alpha(opacity=0);
+ 	-moz-opacity:0;
+ 	opacity:0;
+	z-index:10;
+	width:962px;
+}
+#mainVisual .navi{
+	top:318px;
+	right:30px;
+	position:absolute;
+	z-index:200;
+	width:92px;
+}
+#mainVisual .navi ul{
+	height:13px;
+}
+#mainVisual .navi ul li {
+	width:13px;
+	height:13px;
+	list-style:none;
+	float:left;
+	margin:0 0 0 10px;
+	padding:0;
+}
+#mainVisual .navi ul li a {
+	display:block;
+	height:13px;
+	float:left;
+	text-indent:-9999px;
+}
+.visual_navi1 a,
+.visual_navi2 a,
+.visual_navi3 a,
+.visual_navi4 a{
+	background-image:url(../images/index/btn_visual_off.png);
+	width:13px;
+	height:13px;
+	display:block;
+}
+.visual_navi1 a.now,
+.visual_navi2 a.now,
+.visual_navi3 a.now,
+.visual_navi4 a.now{
+	background-image:url(../images/index/btn_visual_on.png);
+}
+
+/*--------------------Navi--------------------*/
+#Navi2nd{
+	width:100%;
+	min-width:962px;
+	height:60px;
+	background:url(../images/index/index_bar.jpg) repeat-x #FFF;
+}
+#Navi2nd .content ul li{float:left;}
+
+/*--------------------Contents--------------------*/
+.Lc{width:300px;float:left;}
+.Rc{width:630px;float:left;margin-left: 30px;}
+#onlineCatalog{
+	position:relative;
+	width:300px;
+	height:174px;
+	background-image:url(../images/index/oc_zab.jpg);
+	margin:30px 0 0 0;
+}
+#onlineCatalog p{
+	position:absolute;
+	top:126px;
+	left:63px;
+}
+#edspagebtn{
+	margin-top: 30px;
+}
+#uuWeb{
+	position: relative;
+	width: 300px;
+	height: 166px;
+	background-image: url(../images/index/uu_zab.jpg);
+	margin: 30px 0 0 0;
+}
+#uuWeb p {
+    position: absolute;
+	top: 117px;
+	left: 89px;
+}
+#partnerNet{margin: 30px 0 0 0;}
+#topics{
+	position:relative;
+	width:630px;
+	background:url(../images/index/topics_zab.jpg) repeat-y;
+	margin:30px 0 0 0;
+	padding:0;
+	text-align:left;
+}
+#topics ul li{
+	padding:20px;
+}
+.lineGray{border-bottom:#bcbcbc solid 1px;}
+#topics .bottom{
+	width:630px;
+	height:8px;
+	background:url(../images/index/topics_bt.jpg) no-repeat bottom;
+}
+#products{
+	position:relative;
+	width:630px;
+	background:url(../images/index/topics_zab.jpg) repeat-y;
+	margin:30px 0 0 0;
+	padding:0;
+	text-align:left;
+}
+.pro_title{
+	font-size:16px;
+	line-height:16px;
+	padding:0 0 0 20px;
+}
+#products ul li{
+	height:205px;
+	padding:20px;
+	text-align:center;
+}
+.products_box_01{
+	position:relative;
+	width:185px;
+	height:224px;
+	float:left;
+}
+.products_box_01 p{
+	position:absolute;
+	top:180px;
+	left:35px;
+}
+.products_box_02{
+	position:relative;
+	width:185px;
+	height:224px;
+	float:left;
+	margin:0 17px;
+}
+.products_box_02 p{
+	position:absolute;
+	top:180px;
+	left:35px;
+}
+.products_box_03{
+	position:relative;
+	width:185px;
+	height:200px;
+	float:left;
+}
+.products_box_03 p{
+	position:absolute;
+	top:180px;
+	left:63px;
+}
+.products_box_04{
+	position:relative;
+	width:185px;
+	height:200px;
+	float:left;
+	margin:0 17px;
+}
+.products_box_04 p{
+	position:absolute;
+	top:180px;
+	left:63px;
+}
+#products .bottom{
+	width:630px;
+	height:8px;
+	background:url(../images/index/topics_bt.jpg) no-repeat bottom;
+}

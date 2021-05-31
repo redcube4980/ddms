@@ -1,0 +1,45 @@
+@-ms-viewport {
+  width: device-width;
+}
+html {
+  -ms-content-zooming: none;
+  overflow:hidden;
+  -ms-touch-action: none;
+  -ms-user-select: none;
+}
+img {
+  margin:0px;
+  padding:0px;
+  vertical-align: bottom;
+}
+
+#PageNumber {
+  font-size:20px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.Page {
+  -ms-transform: scale(1.0);  /* for iPad scaling */
+}
+
+.ThumbPage {
+  background-color: #ffffff;
+}
+.ThumbPage .ThumbPageNumber {
+  font-size:15px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.zoomInOutTransition {
+  -ms-transition-property: transform;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-in-out;
+}
+
+.scrollTransition {
+  -ms-transition-property: left, top;
+  -ms-transition-duration: 0.5s;
+  -ms-transition-timing-function: ease-in-out;
+}

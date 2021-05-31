@@ -1,0 +1,99 @@
+/* =============================================================================
+   SERVICE
+   ========================================================================== */
+
+#serviceContents{
+	width:960px;
+	background:url(../../images/common/content_zab.jpg) repeat-y;
+}
+#serviceContents .bottom{
+	width:960px;
+	height:20px;
+	background:url(../../images/common/content_bt.jpg) no-repeat bottom;
+}
+#headBar1{
+	position:relative;
+	width:960px;
+	height:40px;
+	background:url(../images/01_head_base.jpg) no-repeat;
+}
+#headBar2{
+	position:relative;
+	width:960px;
+	height:40px;
+	background:url(../images/02_head_base.jpg) no-repeat;
+}
+#headBar3{
+	position:relative;
+	width:960px;
+	height:40px;
+	background:url(../images/03_head_base.jpg) no-repeat;
+}
+#headBar4{
+	position:relative;
+	width:960px;
+	height:40px;
+	background:url(../images/04_head_base.jpg) no-repeat;
+}
+
+#headBar1 .btn1,
+#headBar2 .btn1,
+#headBar3 .btn1,
+#headBar4 .btn1{
+	position:absolute;
+	top:13px;
+	left:17px;
+}
+#headBar1 .btn2,
+#headBar2 .btn2,
+#headBar3 .btn2,
+#headBar4 .btn2{
+	position:absolute;
+	top:13px;
+	left:225px;
+}
+#headBar1 .btn3,
+#headBar2 .btn3,
+#headBar3 .btn3,
+#headBar4 .btn3{
+	position:absolute;
+	top:13px;
+	left:450px;
+}
+#headBar1 .btn4,
+#headBar2 .btn4,
+#headBar3 .btn4,
+#headBar4 .btn4{
+	position:absolute;
+	top:13px;
+	left:675px;
+}
+
+#serviceBox{
+	font-size:13px;
+	margin:40px auto 25px auto;
+}
+#serviceBox .service_txt{
+	width:630px;
+	margin:10px auto 40px auto;
+}
+
+#zaiko_Box{
+	width:622px;
+	margin:0 auto;
+	font-size:10px;
+	line-height:23px;
+	border: 1px solid #CCC;
+}
+
+
+#zaiko_Box .table_border{
+	border-bottom: dashed #A4A4A4 1px;
+}
+#zaiko_Box #table_tit{
+	background-color:#BDBDBE;
+	width:622px;
+	color:#1A1311;
+	text-align:left;
+	margin:0 auto;
+}

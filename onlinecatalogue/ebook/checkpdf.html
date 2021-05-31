@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=Shift_JIS" />
+    <title></title>
+    <script type="text/javascript" src="js/documentinfo.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
+    <script type="text/javascript" src="js/ebutil.js"></script>
+
+<style type="text/css">
+<!--
+body {
+	padding:0px;
+	margin:0px;
+	background-color:white;
+	overflow: hidden;
+}
+img {
+	margin:0px;
+	border: none;
+	vertical-align:bottom;
+}
+table {
+	border-collapse:collapse;
+	padding:0px;
+	border:none;
+}
+td {
+	padding:0px;
+	margin:0px;
+	border:none;
+}
+-->
+</style> 
+<script language="javascript">
+function downPDF(page) {
+	var pg = EBUtil.getQueryParam(window, "pg");
+	pg = parseInt(pg, 10);
+
+	var leftPg  = IsLeftTemplate ? pg : pg + 1;
+	var rightPg = IsLeftTemplate ? pg + 1 : pg;
+
+	var pdfFile;
+	if (page == "R") {
+		pdfFile = rightPg + ".pdf";
+		EBUtil.notifyAction("pdf", "pg="+rightPg);
+	} else if (page == "L") {
+		pdfFile = leftPg + ".pdf";
+		EBUtil.notifyAction("pdf", "pg="+leftPg);
+	} else {
+		pdfFile = "all.pdf";
+        }
+
+	window.open("pdf/" + pdfFile, "new", "width=800, height=600, toolbar=yes, status=yes, menubar=yes, scrollbar=yes, resizable=yes");
+	self.close();
+}
+function onLoad()
+{
+	var pg = EBUtil.getQueryParam(window, "pg");
+	pg = parseInt(pg, 10);
+
+	var pdfStart = firstPage;
+	var pdfEnd   = typeof LastPDF != "undefined" ? LastPDF : lastPage;
+
+	var leftPg  = IsLeftTemplate ? pg : pg + 1;
+	var rightPg = IsLeftTemplate ? pg + 1 : pg;
+
+	if (pdfStart <= leftPg && leftPg <= pdfEnd) {
+		document.getElementById("leftPDF").innerHTML = '<img src="skinimage/pdf/left.gif" width="82" height="22" style="cursor:pointer" onclick="downPDF(\'L\')" />';
+	}
+
+	if (pdfStart <= rightPg && rightPg <= pdfEnd) {
+		document.getElementById("rightPDF").innerHTML = '<img src="skinimage/pdf/right.gif" width="82" height="22" style="cursor:pointer" onclick="downPDF(\'R\')" />';
+	}
+
+	if (FeaturePDFAllBtn) {
+		document.getElementById("allPDF").innerHTML = '<img src="skinimage/pdf/all.gif" width="82" height="22" style="cursor:pointer" onclick="downPDF(\'A\')" />';
+		document.getElementById("allPDFCell").style.display = "block";
+	}
+
+	// Chromeだとサイズ指定が効かない場合がある(Ver.依存？)ので、ここで強制的に変更
+	if (navigator.userAgent.indexOf("Chrome") > -1)
+		window.resizeTo(360, 200);
+
+	document.title = Lang.WindowTitle;
+}
+</script>
+  </head>
+  <body onload="onLoad()" oncontextmenu="return false" ondragstart="return false">
+    <div style="text-align:center;background-color:gray;"><img src="skinimage/pdf/pdf.gif" width="360" height="51" /></div>
+
+    <table style="width:100%;margin:14px 0px;">
+      <tr>
+	<td align="center" width="180"><div id="leftPDF"></div></td>
+	<td id="allPDFCell" style="display:none;" align="center" width="120"><div id="allPDF"></div></td>
+	<td align="center" width="180"><div id="rightPDF"></div></td>
+      </tr>
+    </table>
+    <div style="text-align:center;"><a href="javascript:self.close()"><img src="skinimage/pdf/close.gif" width="82" height="22" /></a></div>
+  </body>
+</html>

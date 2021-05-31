@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>デジタルカタログ</title>
+<style type="text/css">
+<!--
+.style1 {font-size: 14px}
+-->
+</style>
+<script><!--
+function open_book(url, name, option)
+{
+  if (navigator.platform.indexOf("iPhone") != -1) {
+    var ua = navigator.userAgent.toLowerCase();
+    var osVer = 0;
+    if (ua.match(/iphone\s+os\s+([0-9_]+)/)) {
+	osVer = RegExp.$1;
+	osVer = parseFloat(osVer.replace(/_/g, "."));
+      }
+    if (osVer >= 6.0 && osVer < 7.0) {
+      var win;
+      setTimeout(function () {
+	         if (win && !win.closed)
+		   win.close();
+	       }, 1000);
+      win = window.open(url, name, '');
+    } else {
+      window.open(url, name, '');
+    }
+  } else if (navigator.userAgent.indexOf("iPad") != -1) {
+    window.open(url, name, '');
+  } else if (navigator.userAgent.indexOf("Android") != -1) {
+    window.open(url, name, '');
+  } else {
+    window.open(url, name, option);
+  }
+}
+--></script>
+</head>
+
+<body>
+<table width="100%" height="500" align="center"> 
+	<tr valign="middle">
+	  <td valign="middle" align="center"><a href="javascript:void(0)" onclick="javascript:open_book('./top.html','ebook','width=1015,height=700,left=0,top=0,resizable=yes')">
+		<img src="images/start.jpg" width="199" height="146" border="0" /></a>
+		<br><br>
+		<span class="style1">※実際の公開時はこちらのページは表示されません。</span></td>
+	</tr>
+</table>
+
+</body>
+</html>

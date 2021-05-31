@@ -1,0 +1,74 @@
+body {
+	background:url(../../images/index/topcontent_zab.gif) repeat-y;
+}
+
+#topBoxNavi{
+	float:left;
+	margin:0;
+	padding: 0 0 45px;
+	width:330px;
+	background:url(../../images/index/topnavi_bg.gif) repeat-y;
+}
+#topBoxNavi ul{
+	width:328px;
+	margin:0;
+	padding:0;
+}
+#topBoxNavi ul li {
+	margin:0;
+	padding:0;
+}
+#topBoxNavi ul li a {
+	display:block;
+	height:58px;
+}
+
+#topBoxR {
+	float:right;
+	margin: 0 10px;
+	padding:0;
+	width:600px;
+	text-align:left;
+}
+
+#topBoxR h2 {
+	border-bottom:1px solid #999;
+}
+
+#topBoxR p { clear:both; }
+#topBoxR p.topBoxConts { padding: 2em 0; text-align:center; }
+#topBoxR p.topBoxConts a:hover { filter: alpha(opacity=60); -moz-opacity:0.6; opacity: 0.6; }
+
+#topBoxR .boxL {
+	float:left;
+	margin: 0 5px;
+	width:280px;
+	text-align:center;
+}
+#topBoxR .boxR {
+	float:right;
+	margin: 0 5px;
+	width:280px;
+	text-align:center;
+}
+
+#topBoxR .boxL h3,
+#topBoxR .boxR h3 { margin: 1em 0; padding: .5em 1em; border-left:7px solid #c33; border-bottom:1px solid #ccc; text-align:left; background:#eee; }
+
+#topBoxR ul {
+	margin:0;
+	padding: 2em 0;
+	text-align:left;
+}
+#topBoxR ul li {
+	margin-left:1em;
+	padding-left: 1em;
+	background:url(../../images/common/arrow.png) no-repeat 0 0;
+}
+
+#topBoxR ul ul {
+	padding: .3em 0;
+	text-align:left;
+}
+
+.C { text-align:center; }

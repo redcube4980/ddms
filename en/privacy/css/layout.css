@@ -1,0 +1,37 @@
+/* =============================================================================
+   PRIVACY POLICY
+   ========================================================================== */
+
+#privacyContents{
+	width:960px;
+	background:url(../../images/common/content_zab.jpg) repeat-y;
+	text-align:left;
+}
+#privacyContents .bottom{
+	width:960px;
+	height:20px;
+	background:url(../../images/common/content_bt.jpg) no-repeat bottom;
+}
+
+#privacyBox{
+	width:900px;
+	margin:37px auto 0 auto;
+	overflow:hidden;
+}
+
+#privacyBox h2 {
+	font-size:15px;
+	font-weight:bold;
+}
+#privacyBox p {
+	margin-bottom:2em;
+}
+#privacyBox ul {
+	margin: 0 0 2em 2em;
+}
+#privacyBox ul li {
+	list-style:circle;
+}
+#privacyBox a{
+	color:#F00;
+}

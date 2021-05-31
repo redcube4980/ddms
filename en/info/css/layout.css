@@ -1,0 +1,31 @@
+/* =============================================================================
+   INFO
+   ========================================================================== */
+
+#infoContents{
+	width:960px;
+	background:url(../../images/common/content_zab.jpg) repeat-y;
+	text-align:left;
+}
+#infoContents .bottom{
+	width:960px;
+	height:20px;
+	background:url(../../images/common/content_bt.jpg) no-repeat bottom;
+}
+
+#infoBox{
+	width:900px;
+	margin:37px auto 25px auto;
+	overflow:hidden;
+}
+#infoBox ul{
+	width:225px;
+	float:left;
+}
+#infoBox ul li{
+	background:url(../../images/common/arrow.png) 0 0 no-repeat;
+	height:16px;
+	font-size:11px;
+	margin:7px 0 0 0;
+	padding:0 0 0 8px;
+}

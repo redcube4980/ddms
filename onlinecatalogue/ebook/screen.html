@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=Shift_JIS" />
+    <title></title>
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" type="text/css" href="css/screen.css" /> 
+    <script type="text/javascript" src="../js/util.js"></script>
+    <script type="text/javascript" src="js/documentinfo.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
+    <script type="text/javascript" src="js/easybook.js"></script>
+    <script type="text/javascript" src="js/ebutil.js"></script>
+    <script type="text/javascript" src="js/screen.js"></script>
+    <script type="text/javascript" src="js/bar.js"></script>
+    <script type="text/javascript" src="js/bookmark.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"></script>
+    <script type="text/javascript" src="js/sound.js"></script>
+    <script type="text/javascript" src="js/window.js"></script>
+    <script type="text/javascript" src="js/mapwin.js"></script>
+ </head>
+  <body onload="onLoad()" oncontextmenu ="return false">
+    <!-- Currently unused. For future.
+    <div id="header">Header</div>
+    -->
+
+    <div id="mainarea">
+      <div id="normallayer">
+	<div id="bookborderlayer"></div>
+	<div id="booklayer"></div>
+	<div id="linklayer"></div>
+	<div id="centerborderlayer"></div>
+	<div id="bookmarklayer"></div>
+      </div>
+      
+      <div id="zoomlayer">
+	<div id="zoomedbooklayer" onmousemove="onZoomLayerMouseMove(event);return false;"></div>
+	<div id="zoomedlinklayer"></div>
+	<div id="zoomedscrolllayer">
+	  <img id="scrolltop" src="skinimage/book/scroll_top.gif" />
+	  <img id="scrollleft" src="skinimage/book/scroll_left.gif" />
+	  <img id="scrollright" src="skinimage/book/scroll_right.gif" />
+	  <img id="scrollbottom" src="skinimage/book/scroll_bottom.gif" />
+	</div>
+      </div>
+
+      <div id="copy_and_paste_layer">
+      </div>
+      <div id="windowlayer">
+      </div>
+
+      <div id="sidebar">
+      </div>
+    </div>
+
+    <div id="controlbar" align="center" ondragstart="return false">
+      <div id="cb_container" style="width:1200px;"><!-- 中央寄せ用にwidthを指定したコンテナ。widthはここでは大きめの値を設定しておけば、後でJavaScriptにより設定される。 -->
+	<div class="cell" style="width:400px;margin-left:30px;margin-right:20px;">
+	  <div class="cell"><img id="goLeftMost" src="skinimage/s.gif" width="100" height="51" /></div>
+	  <div class="cell"><img id="goLeft" src="skinimage/s.gif" width="100" height="51" /></div>
+	  <div class="cell"><img id="goRight" src="skinimage/s.gif" width="100" height="51" /></div>
+	  <div class="cell"><img id="goRightMost" src="skinimage/s.gif" width="100" height="51" /></div>
+	</div>
+
+	<div class="cell" style="width:110px;margin-right:10px; text-align:left;">
+	  <div class="cell">
+	    <div style="text-align:left;height:23px;padding-top:3px; line-height:1.2em; position:relative; top:2px;">
+	      <span id="PageNumber" class="page"></span><img src="skinimage/bar/page.jpg" width="30" height="13" class="pagebtn" />
+	    </div>
+	    <div>
+	      <div class="cell">
+		<input type="text" value="" id="MoveTargetNum" name="MoveTargetNum" align="absmiddle" maxlength="4" style="width:40px;height:13px;" />
+	      </div>
+	      <div class="cell">
+		<img class="autoRO PageRoll" id="GotoButton" src="skinimage/bar/move.jpg" width="60" height="23" />
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="cell">
+	  <div class="cell"><img class="autoRO" id="TOCButton" src="skinimage/bar/mokuji.jpg" width="62" height="51" /></div>
+	  <div class="cell"><img class="autoRO" id="BookMarkButton" galleryimg="" src="skinimage/bar/bookmark.jpg" width="62" height="51" /></div>
+	  <div class="cell"><img class="autoRO" id="PDFButton" galleryimg="" src="skinimage/bar/pdf.jpg" width="62" height="51" /></div>
+	  <div class="cell"><img class="autoRO" id="PrintButton" galleryimg="" src="skinimage/bar/print.jpg" width="62" height="51" /></div>
+<!-- CAD Download Button
+	  <div class="cell"><img class="autoRO" src="skinimage/bar/cad.jpg" id="DownloadButton" width="62" height="51" /><img src="skinimage/bar/cad_off.jpg" id="DownloadButtonOff" width="62" height="51" border="0" style="display:none;" /></div>
+End of CAD Download Button -->
+<!-- Sound Play Button
+	  <div class="cell"><img id="SoundButton" src="skinimage/bar/sound_ro.jpg" offsrc="skinimage/bar/sound.jpg" onsrc="skinimage/bar/sound_ro.jpg"  active="true" width="62" height="51"></div>
+End of Sound Play Button -->
+<!--CopyModeButton
+	  <div class="cell"><img class="autoRO" src="skinimage/bar/cut_off.jpg" id="CopyModeButton" width="62" height="51" /><img class="autoRO" src="skinimage/bar/cut_on.jpg" id="CopyModeOffButton" width="62" height="51" style="display:none;" /><img src="skinimage/bar/cut_no.jpg" id="CopyModeDisabledButton" width="62" height="51" border="0" style="display:none;" /></div>
+End of CopyModeButton-->
+<!-- Auto Feed Button
+	  <div class="cell">
+	    <div style="padding-top:5px;"><img id="AutoFeedButton" src="skinimage/bar/autopage_off.jpg" offsrc="skinimage/bar/autopage_off.jpg" onsrc="skinimage/bar/autopage.jpg" alt="" width="80" height="19" style="cursor:pointer;" /></div>
+	    <div>
+	      <select id="AutoCount" size=1>
+		<option value="3" selected> 3 秒ごと</option>
+		<option value="5">5 秒ごと</option>
+		<option value="10">10 秒ごと</option>
+	      </select>
+	    </div>
+	  </div>
+End of Auto Feed Button -->
+	</div>
+	<div id="cb_last_button_pos" class="cell"></div>
+	<div style="clear:both;"></div>
+
+	<img id="FrameButton" galleryimg="" src="skinimage/bar/fr_close.gif" offsrc="skinimage/bar/fr_close.gif" close_offsrc="skinimage/bar/fr_close.gif" close_onsrc="skinimage/bar/fr_close_ov.gif" open_offsrc="skinimage/bar/fr_open.gif" open_onsrc="skinimage/bar/fr_open_ov.gif" width="35" height="51" style="display:none;position:absolute;top:0px;left:0px;" />
+      </div>
+    </div><!-- end of controlbar --> 
+    <div id="object_pocket" style="display:none;"></div>
+  </body>
+</html>
